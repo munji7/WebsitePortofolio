@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Munji</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="nav-logo">Portofolio</div>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m <span>Munji</span></h1>
+      <p><span id="typing"></span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img id="profilePic" src="img/ProfilePic.png" alt="Profile" class="profile-pic" />
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+      </div>
+
+      <div class="about-text reveal">
+        <h3>Halo, Aku <span class="highlight">Munji</span> 👋</h3>
+        <p>
+          Aku mahasiswa <b>Teknik Informatika UNNES</b> yang memiliki minat di dunia
+          <span class="highlight">Web Development</span> dan
+          <span class="highlight">Game Development</span>.
+          Senang memadukan logika pemrograman dengan desain modern untuk menciptakan karya yang bermanfaat.
+        </p>
+
+        <div class="skills">
+          <div class="skill">⚡ Frontend Developer</div>
+          <div class="skill">🎨 UI/UX Enthusiast</div>
+          <div class="skill">🕹️ Game Creator</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline-horizontal">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2019</h3>
+          <p>Mulai tertarik dengan dunia <b>pemrograman</b> dan <b>desain digital</b>.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2021</h3>
+          <p>Masuk <b>Teknik Informatika UNNES</b>, fokus mendalami <b>Web Development</b>.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2023</h3>
+          <p>Mengerjakan proyek pertama: <b>Game 2D Pixel</b> sederhana.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2025</h3>
+          <p>Membangun <b>website modern</b> dengan <b>animasi interaktif</b> 🎉</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Proyek Saya</h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <h3>Website Portofolio</h3>
+        <p>Website interaktif dengan animasi modern, smooth scroll, dan responsive.</p>
+      </div>
+      <div class="project-card reveal">
+        <h3>Game 2D Pixel</h3>
+        <p>Game sederhana bergaya pixel art menggunakan Unity Engine.</p>
+      </div>
+      <div class="project-card reveal">
+        <h3>Mini E-Commerce</h3>
+        <p>Aplikasi showcase produk dengan keranjang belanja sederhana.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Kontak Saya</h2>
+  <form
+    class="contact-form"
+    action="mailto:gilangputra200507@students.unnes.ac.id"
+    method="post"
+    enctype="text/plain"
+  >
+    <div class="form-group">
+      <input type="text" name="name" id="name" placeholder=" " required />
+      <label for="name">Nama Anda</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" id="email" placeholder=" " required />
+      <label for="email">Email Anda</label>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" id="message" placeholder=" " required></textarea>
+      <label for="message">Pesan Anda...</label>
+    </div>
+
+    <button type="submit" class="btn-primary">Kirim Pesan</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://github.com/munji7" target="_blank">GitHub</a>
+    <a href="https://instagram.com/gipradhita" target="_blank">Instagram</a>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Munji. Dibuat dengan ❤️ & AI.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop">↑</button>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("tUvhiYs3Y6dZ8GLIj");
+    })();
+  </script>
+</body>
+</html>
